@@ -165,11 +165,11 @@ Created an Excel-based test case management system for HTML and CSS validation t
 ```bash
 Edge_Software_Quality_Assurance/
 │
-├── Assignment-01/
-├── Assignment-02/
-├── Assignment-03/
-├── Assignment-04/
-├── Assignment-05/
+├── Assignment-01
+├── Assignment-02
+├── Assignment-03
+├── Assignment-04
+├── Assignment-05
 │
 ├── Reports/
 ├── Screenshots/
