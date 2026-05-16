@@ -1,0 +1,16 @@
+Test Case ID,Feature,Test Scenario,Test Steps,Test Data,Expected Result,Test Type
+HCV_001,HTML Validation,Validate page with correct HTML structure,Open page source and run through W3C HTML Validator,Valid HTML5 document,No HTML validation errors found,Positive
+HCV_002,HTML Validation,Missing closing tag validation,Remove closing </div> tag and validate HTML,<div><p>Test</p>,Validator reports missing closing tag error,Negative
+HCV_003,HTML Validation,Duplicate ID attribute check,Use same id attribute for multiple elements and validate,id='header' used twice,Validator reports duplicate ID warning/error,Negative
+HCV_004,HTML Validation,Image accessibility validation,Validate image tag without alt attribute,<img src='logo.png'>,Validator or accessibility checker reports missing alt attribute,Accessibility
+HCV_005,HTML Validation,Invalid nested HTML elements,Place block element inside inline element incorrectly,<span><div>Text</div></span>,Validator reports invalid HTML nesting,Negative
+HCV_006,CSS Validation,Validate correct CSS syntax,Run stylesheet through W3C CSS Validator,body { margin: 0; },No CSS validation errors found,Positive
+HCV_007,CSS Validation,Missing semicolon in CSS,Remove semicolon from CSS property and validate,color: red background: blue;,Validator reports syntax error,Negative
+HCV_008,CSS Validation,Invalid CSS property name,Use unsupported property name in stylesheet,colr: blue;,Validator reports unknown property error,Negative
+HCV_009,CSS Validation,Responsive CSS media query validation,Validate media query syntax,@media screen and (max-width: 768px),Media query syntax accepted without errors,Compatibility
+HCV_010,CSS Validation,Unused CSS class detection,Analyze stylesheet for unused classes,.unused-class { color: red; },Unused CSS class identified during analysis,Optimization
+HCV_011,HTML/CSS Validation,Cross-browser rendering validation,"Open webpage in Chrome, Firefox, and Edge",Responsive webpage,Layout renders consistently across browsers,Compatibility
+HCV_012,HTML/CSS Validation,Broken external stylesheet link,Provide incorrect stylesheet path and load page,<link rel='stylesheet' href='wrong.css'>,Stylesheet fails to load and browser console shows error,Negative
+HCV_013,HTML Validation,Special character encoding validation,Use Unicode and special characters in HTML content,বাংলা © ✓,Characters display correctly without encoding issues,Edge Case
+HCV_014,CSS Validation,Large CSS file performance validation,Load webpage with large CSS file,5000+ line CSS file,Page loads without major rendering delay,Performance
+HCV_015,HTML/CSS Validation,Inline style override validation,Apply inline style conflicting with external stylesheet,style='color:red;',Inline style overrides external CSS according to CSS specificity rules,Functional
