@@ -170,7 +170,4 @@ Edge_Software_Quality_Assurance/
 ├── Assignment-03
 ├── Assignment-04
 ├── Assignment-05
-│
-├── Reports/
-├── Screenshots/
 └── README.md
